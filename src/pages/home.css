@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.home-main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    background-color: #f0f0f0;
+}
+
+.home-bg {
+    width: 100%;
+    height: 650px;
+    background-image: url('../bg-image.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-color: black;
+    /* Media for making container responsive */
+}
+
+.home-container {
+    margin: 100px 80px 40px 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.image-container {
+    margin-right: 80px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 1;
+    position: relative;
+    right: 0;
+    transition: 0.7s ease-out;
+}
+
+.image {
+    height: 500px;
+    width: 375px;
+    border: 15px solid white;
+    border-bottom: 50px solid white;
+    border-radius: 5px;
+    /* border-radius: 50%; */
+    box-shadow: 0 0 10px  rgba(0, 0, 0, 0.3);
+    background-image: url('../surface.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(358deg);
+    transition: 0.7s ease-out;
+}
+
+.image-container.slide-right {
+    opacity: 0;
+    position: relative;
+    right: 100px;
+}
+
+.image-container.slide-right .image {
+    transform: rotate(360deg);
+    box-shadow: none;
+}
+
+.photo-credits {
+    margin-bottom: 0;
+    padding-left: 20px;
+    color: rgba(0, 0, 0, 0.527);
+    font-size: small;
+}
+
+.photo-credits a {
+    color: inherit;
+}
+
+.intro {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    position: relative;
+    left: 0;
+    transition: 0.7s ease-out;
+}
+
+.intro h1 {
+    color: #161616;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+}
+
+.intro p{
+    font-size: 1.3em;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(36, 36, 36);
+    text-align: justify;
+}
+
+.intro.slide-left {
+    opacity: 0;
+    position: relative;
+    left: 100px;
+}
+
+@media (max-width: 900px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info .image-container{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .home-container {
+        margin: 30px;
+    }
+    .image-container{
+        margin-top: 20px;
+    }
+    .image {
+        height: 275px;
+        width: 275px;
+    }
+    .intro p {
+        font-size: 1em;
+    }
+}
+

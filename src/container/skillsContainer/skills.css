@@ -1,0 +1,28 @@
+.skills {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.skills-heading {
+    width: 100%;
+    text-align: center;
+}
+
+.skills-container {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skill-logo {
+    height: 30px;
+    width: 30px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+}

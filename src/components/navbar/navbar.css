@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+.navbar {
+    height: 70px;
+    width: 100%;
+    padding: 20px 0 30px 0;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    transition: 0.5s ease-in;
+    z-index: 99;
+}
+
+.scrolled {
+    background-color: white;
+    color: black;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.navbar-container {
+    width: 100%;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-heading {
+    margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+    .navbar-heading {
+        margin-left: 5px;
+    }
+}
+
+.navbar-title {
+    font-size: 2.5em;
+    transition: 0.5s ease-in;
+    font-family: 'New Tegomin', serif;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+}
+
+.navbar-links .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-links ul{
+        display: none;
+    }
+    .navbar-links .icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .navbar-links-mobile ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 100px;
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        transition: all 0.5s ease-in;
+    }
+
+    .navbar-links-mobile ul a {
+        padding: 10px;
+    }
+
+    .navbar-links-mobile a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .navbar-links-mobile .icon {
+        padding: 10px;
+    }
+}
+
+/* Scrolled Mobile Dropdown */
+@media screen and (max-width:600px) {
+
+    .navbar-links-mobile-scrolled ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        width: 100%;
+        text-align: center;
+        background-color: white;
+        transition: all 0.5s ease-in;
+        box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+    }
+
+    .navbar-links-mobile-scrolled ul a {
+        padding: 10px;
+    }
+
+    .navbar-links-mobile-scrolled a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .navbar-links-mobile-scrolled ul a:last-of-type {
+        margin-bottom: 10px;
+    }
+
+    .navbar-links-mobile-scrolled ul a:first-of-type {
+        margin-top: 10px;
+    }
+
+    .navbar-links-mobile-scrolled .icon {
+        padding: 10px;
+    }
+}
