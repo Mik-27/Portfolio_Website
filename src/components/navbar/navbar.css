@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Titillium+Web:wght@700&display=swap');
 
 .navbar {
     height: 70px;
     width: 100%;
     padding: 20px 0 30px 0;
-    color: white;
-    background-color: black;
+    color: #59d4ce;
+    /* background-image: linear-gradient(to bottom, #17252a, #17252ac0, #5cdb9500); */
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -14,15 +16,16 @@
 }
 
 .scrolled {
-    background-color: white;
-    color: black;
+    background-color: #f1ffff;
+    color: #17252a;
     padding: 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
 }
 
 .navbar-container {
     width: 100%;
-    margin: 0 20px;
+    margin: 0 70px;
+    margin-left: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -40,15 +43,45 @@
 }
 
 .navbar-title {
-    font-size: 2.5em;
+    font-size: 2em;
     transition: 0.5s ease-in;
-    font-family: 'New Tegomin', serif;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    word-break: break-all;
+    cursor: default;
+}
+
+.navbar-links ul{
+    display: flex;
+    flex-direction: row;
 }
 
 .navbar-links a {
     text-decoration: none;
     color: inherit;
     padding: 10px;
+    margin: 0 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: 0.3s ease-in;
+}
+
+.navbar-links a:hover {
+    color: #3a8a86;
+    /* text-decoration: underline; */
+}
+
+.navbar-links a::after {
+    margin-top: 5px;
+    display:block;
+    content: '';
+    border-bottom: solid 3px #3a8a86;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+.navbar-links a:hover::after {
+    transform: scaleX(1);
 }
 
 .navbar-links .icon {
@@ -105,7 +138,7 @@
         text-align: center;
         background-color: white;
         transition: all 0.5s ease-in;
-        box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+        /* box-shadow: 0 2px 3px rgba(0,0,0,0.5); */
     }
 
     .navbar-links-mobile-scrolled ul a {

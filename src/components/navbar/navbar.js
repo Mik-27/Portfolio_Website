@@ -41,7 +41,10 @@ export default function Navbar() {
 		<nav className="navbar">
 			<div className="navbar-container">
 				<div className="navbar-heading">
-					<h2 className="navbar-title">Mihir Thakur</h2>
+					<h2 className="navbar-title">
+						Mihir <br />
+						Thakur
+					</h2>
 				</div>
 				<div
 					className={

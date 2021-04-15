@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Skills from "../container/skillsContainer/skills";
 import "./home.css";
+import bgImg from "../assets/laptopbg.jpg";
 
 export default function Home() {
 	const [slide, setSlide] = useState(false);
@@ -20,7 +21,23 @@ export default function Home() {
 
 	return (
 		<div className="home-main">
-			<div className="home-bg"></div>
+			<div className="home-bg-container">
+				<div className="home-bg">
+					<img className="bg-image" src={bgImg} alt="" />
+					<div className="main-text">
+						<h1>
+							<span className="text-first" style={{ color: "#3aafa9" }}>
+								Hi, I'm Mihir Thakur.
+							</span>
+							<br></br>
+							<span className="text-second">
+								I'm a fresher interested in Web Development and Machine
+								Learning.
+							</span>
+						</h1>
+					</div>
+				</div>
+			</div>
 			<section className="home-container">
 				<div className="info">
 					<div

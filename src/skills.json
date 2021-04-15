@@ -1,28 +1,23 @@
 [
     {
         "title": "HTML",
-        "image-url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vexels.com%2Fpng-svg%2Fpreview%2F166383%2Fhtml-programming-language-icon&psig=AOvVaw0VIY1-SF8bkkSaLTJav_Yl&ust=1617892348738000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLjr-eis7O8CFQAAAAAdAAAAABAD",
+        "image-url": "http://assets.stickpng.com/thumbs/5847f5bdcef1014c0b5e489c.png",
         "proficiency": "80"
     },
     {
         "title": "CSS",
-        "image-url": "https://www.google.com/url?sa=i&url=https%3A%2F%2F1000logos.net%2Fcss-logo%2F&psig=AOvVaw0b2Cu4G3dgue-u89eyQVTo&ust=1617892141491000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIiv7oWs7O8CFQAAAAAdAAAAABAD",
+        "image-url": "https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo.png",
         "proficiency": "80"
     },
     {
         "title": "Javascript",
-        "image-url": "https://www.google.com/url?sa=i&url=https%3A%2F%2F1000logos.net%2Fjavascript-logo%2F&psig=AOvVaw1flOxbz5ryg7u-L4gfLd27&ust=1617892399517000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOjwp4Gt7O8CFQAAAAAdAAAAABAD",
+        "image-url": "https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png",
         "proficiency": "70"
     },
     {
         "title": "React-JS",
-        "image-url": "https://www.vhv.rs/dpng/d/612-6126558_react-logo-png-react-js-logo-svg-transparent.png",
+        "image-url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png",
         "proficiency": "60"
-    },
-    {
-        "title": "Styled Components",
-        "image-url": "https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png",
-        "proficiency": "70"
     },
     {
         "title": "Node.js",
@@ -31,7 +26,7 @@
     },
     {
         "title": "Python",
-        "image-url": "http://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png",
+        "image-url": "https://www.jing.fm/clipimg/full/53-537670_python-png-file-python-logo-png.png",
         "proficiency": "70"
     },
     {
@@ -43,10 +38,5 @@
         "title": "Matplotlib",
         "image-url": "https://matplotlib.org/3.1.1/_static/logo2_compressed.svg",
         "proficiency": "60"
-    },
-    {
-        "title": "Machine Learning Algorithms",
-        "image-url": "https://banner2.cleanpng.com/20190404/yf/kisspng-deep-learning-with-python-machine-learning-artific-seed-healthcare-5ca6457bb9f952.7961353315544006357618.jpg",
-        "proficiency": "40"
     }
 ]

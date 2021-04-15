@@ -9,16 +9,16 @@ export default function Footer() {
 				</div>
 				<div className="footer-links">
 					<a className="github-link" href="https://github.com/Mik-27">
-						<i class="fab fa-github"></i>
+						<i className="fab fa-github"></i>
 					</a>
 					<a
 						className="linkedin-link"
 						href="https://www.linkedin.com/in/mihir-thakur-116aa2208/"
 					>
-						<i class="fab fa-linkedin-in"></i>
+						<i className="fab fa-linkedin-in"></i>
 					</a>
 					<a className="kaggle-link" href="https://www.kaggle.com/mihir27">
-						<i class="fab fa-kaggle"></i>
+						<i className="fab fa-kaggle"></i>
 					</a>
 				</div>
 			</div>
