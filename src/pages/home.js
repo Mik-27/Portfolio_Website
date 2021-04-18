@@ -70,8 +70,11 @@ export default function Home() {
 						</p>
 					</div>
 				</div>
+			</section>
+			<section className="skill-container">
 				<Skills />
 			</section>
+			<section className="projects-container"></section>
 		</div>
 	);
 }

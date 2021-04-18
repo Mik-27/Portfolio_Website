@@ -17,7 +17,7 @@
     height: 750px;
     /* background-image: url('../assets/laptopbg.jpg'); */
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
     background-color: #17252a;
     /* opacity: 0.25; */
@@ -51,9 +51,10 @@
 }
 
 .home-container {
-    margin: 100px 80px 40px 80px;
+    margin: 100px 80px 100px 80px;
     display: flex;
     flex-direction: column;
+    height: auto;
 }
 
 .info {
@@ -169,5 +170,12 @@
     .intro p {
         font-size: 1em;
     }
+}
+
+.skill-container {
+    background-color: #17252a;
+    background-image: url("../assets/skillsbg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
