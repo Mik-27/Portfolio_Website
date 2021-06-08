@@ -1,0 +1,66 @@
+.project-card {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    width: 30%;
+    background-color: #17252a;
+    margin: 0 20px;
+    margin-bottom: 50px;
+    transition: 1s ease-in;
+}
+
+.project-img img {
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.6;
+    object-fit: fill;
+    height: 25em;
+    width: fit-content;
+}
+
+.project-img {
+    transition: 0.5s ease;
+    height: inherit;
+}
+
+.project-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 90;
+    display: none;
+    /* visibility: hidden; */
+    color: #acfffb;
+    transition: 1s visibility ease-in;
+    text-align: center;
+    cursor: default;
+}
+
+.github-button {
+    color: #c3073f;
+    font-weight: 500;
+    background-color: transparent;
+    padding: 10px;
+    border: 2px solid #960430;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.github-button:hover {
+    background-color: #c3073f;
+    color: #f0f0f0;
+}
+
+.project-card:hover .project-heading{
+    display: block;
+    /* visibility: visible; */
+    opacity: 1;
+    /* transition: 1s all ease-in; */
+}
+
+.project-card:hover .project-img{
+    opacity: 0.15;
+}
