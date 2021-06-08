@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import Skills from "../container/skillsContainer/skills";
+import Projects from "../container/projectsContainer/projects";
+import Experience from "../container/experienceContainer/exp";
 import "./home.css";
 import bgImg from "../assets/laptopbg.jpg";
 
@@ -7,7 +9,7 @@ export default function Home() {
 	const [slide, setSlide] = useState(false);
 
 	const slideIn = () => {
-		if (window.scrollY >= 600) {
+		if (window.scrollY >= 450) {
 			setSlide(true);
 		}
 	};
@@ -61,20 +63,39 @@ export default function Home() {
 						<h1>About Me</h1>
 						<p>
 							I'm currently pursuing my Computer Engineering Degree from
-							University of Mumbai. My interests are in Web Development and
-							Machine Learning and I love to create performant projects. <br />
+							University of Mumbai. I expect to graduate in Spring, 2022. My
+							interests are Web Development and Machine Learning. I love to
+							create performant projects. <br />
 							<br />I had developed a web application - YelpCamp based on an
 							online course which helps user for finding and reviewing camping
 							areas. I am actually not quite experienced in Machine Learning but
-							intend to develop ML applications and gain expertise.
+							intend to expand my knowledge by developing ML applications and
+							gain expertise.
 						</p>
 					</div>
 				</div>
 			</section>
 			<section className="skill-container">
 				<Skills />
+				<div className="skill-img-credits">
+					<p>
+						Photo by{" "}
+						<a href="https://unsplash.com/@florianolv?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+							Florian Olivo
+						</a>{" "}
+						on{" "}
+						<a href="https://unsplash.com/s/photos/coding?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+							Unsplash
+						</a>
+					</p>
+				</div>
 			</section>
-			<section className="projects-container"></section>
+			<section className="projects-container">
+				<Projects />
+			</section>
+			<section className="experience-container">
+				<Experience />
+			</section>
 		</div>
 	);
 }

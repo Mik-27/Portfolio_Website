@@ -50,6 +50,38 @@
     font-size: 1.7em;
 }
 
+@media (max-width: 1080px) {
+    .main-text .text-first {
+        font-size: 1.9em;
+        margin-bottom: 10px;
+    }  
+    .main-text .text-second {
+        font-size: 1.6em;
+    }
+    .home-bg .main-text {
+        width: 500px;
+    }
+}
+
+@media (max-width: 780px) {
+    .main-text .text-first {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }  
+    .main-text .text-second {
+        font-size: 1.1em;
+    }
+    .home-bg .main-text {
+        width: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    .home-bg .main-text {
+        left: 20%;
+    }
+}
+
 .home-container {
     margin: 100px 80px 100px 80px;
     display: flex;
@@ -179,3 +211,17 @@
     background-attachment: fixed;
 }
 
+.skill-img-credits {
+    margin: 0 auto 20px 10px;
+    color: #def2f1;
+    opacity: 0.5;
+}
+
+.skill-img-credits a {
+    color: #32b8b3;
+}
+
+.projects-container {
+    height: auto;
+    width: 100%;
+}
