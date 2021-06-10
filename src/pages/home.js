@@ -6,20 +6,20 @@ import "./home.css";
 import bgImg from "../assets/laptopbg.jpg";
 
 export default function Home() {
-	const [slide, setSlide] = useState(false);
+	// const [slide, setSlide] = useState(false);
 
-	const slideIn = () => {
-		if (window.scrollY >= 450) {
-			setSlide(true);
-		}
-	};
+	// const slideIn = () => {
+	// 	if (window.scrollY >= 450) {
+	// 		setSlide(true);
+	// 	}
+	// };
 
-	useEffect(() => {
-		window.addEventListener("scroll", slideIn);
-		return () => {
-			window.removeEventListener("scroll", slideIn);
-		};
-	}, []);
+	// useEffect(() => {
+	// 	window.addEventListener("scroll", slideIn, { passive: true });
+	// 	return () => {
+	// 		window.removeEventListener("scroll", slideIn, { passive: true });
+	// 	};
+	// }, []);
 
 	return (
 		<div className="home-main">
@@ -43,9 +43,10 @@ export default function Home() {
 			<section className="home-container">
 				<div className="info">
 					<div
-						className={
-							slide ? "image-container" : "image-container slide-right"
-						}
+						// className={
+						// 	slide ? "image-container" : "image-container slide-right"
+						// }
+						className="image-container"
 					>
 						<div className="image"></div>
 						<p className="photo-credits">
@@ -59,7 +60,10 @@ export default function Home() {
 							</a>
 						</p>
 					</div>
-					<div className={slide ? "intro" : "slide-left intro"}>
+					<div
+						// className={slide ? "intro" : "slide-left intro"}
+						className="intro"
+					>
 						<h1>About Me</h1>
 						<p>
 							I'm currently pursuing my Computer Engineering Degree from

@@ -7,7 +7,7 @@ export default function Navbar() {
 	const [isScrolled, setIsScrolled] = useState(false);
 
 	const handleScroll = () => {
-		if (window.scrollY > 670) {
+		if (window.scrollY > 600) {
 			// console.log("Scrolled", window.scrollY);
 			setIsScrolled(true);
 			document.querySelector(".navbar").classList.add("scrolled");
@@ -31,9 +31,9 @@ export default function Navbar() {
 	// };
 
 	useEffect(() => {
-		window.addEventListener("scroll", handleScroll);
+		window.addEventListener("scroll", handleScroll, { passive: true });
 		return () => {
-			window.removeEventListener("scroll", handleScroll);
+			window.removeEventListener("scroll", handleScroll, { passive: true });
 		};
 	}, []);
 
