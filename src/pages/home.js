@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import Skills from "../container/skillsContainer/skills";
 import Projects from "../container/projectsContainer/projects";
 import Experience from "../container/experienceContainer/exp";
