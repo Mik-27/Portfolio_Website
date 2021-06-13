@@ -1,3 +1,4 @@
+import ExpCard from "../../components/exp-card/expCard";
 import "./exp.css";
 
 export default function Experience() {
@@ -5,6 +6,9 @@ export default function Experience() {
 		<div className="exp-main">
 			<div className="exp-title">
 				<h1>Experience</h1>
+			</div>
+			<div className="exp-container">
+				<ExpCard />
 			</div>
 		</div>
 	);

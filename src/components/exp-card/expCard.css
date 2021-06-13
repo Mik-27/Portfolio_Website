@@ -1,0 +1,38 @@
+.exp-card {
+    text-align: center;
+}
+
+.card-contents {
+    margin-top: 2.5em;
+    font-size: 1.3em;
+}
+
+.card-contents > .duration {
+    font-size: 1.1em;
+}
+
+.card-contents > .designation {
+    color: rgb(31, 160, 211);
+}
+
+ul.details {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+ul.details > li {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.281);
+}
+
+ul.details > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+ul.details > li > a:hover {
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.356);
+    color: rgba(0, 0, 0, 0.637);
+}
