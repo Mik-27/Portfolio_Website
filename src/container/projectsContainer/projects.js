@@ -11,9 +11,17 @@ export default function Projects() {
 				<h1>Projects</h1>
 			</div>
 			<div className="project-container">
-				<ProjectCard image={netflixImg} title="Netflix Clone" />
-				<ProjectCard image={yelpcampImg} title="YelpCamp" />
-				<ProjectCard image={pdpImg} title="Plant Disease Prediction" />
+				<ProjectCard
+					image={netflixImg}
+					title="Netflix Clone"
+					link="https://github.com/Mik-27/Netflix-Clone"
+				/>
+				<ProjectCard
+					image={yelpcampImg}
+					title="YelpCamp"
+					link="https://github.com/Mik-27/Yelp_Camp"
+				/>
+				<ProjectCard image={pdpImg} title="Plant Disease Prediction" link="" />
 				{/* <ProjectCard /> */}
 			</div>
 		</div>

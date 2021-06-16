@@ -16,12 +16,12 @@ export default function Skills() {
 				/>
 				<SkillCard
 					logos={["fab fa-node-js"]}
-					title="Node-JS"
+					title="Node JS"
 					description="Node JS is the first backend that I used with Express engine and Restful Routing. Implemented middleware for user authentication. Established connection with MongoDB using Mongoose."
 				/>
 				<SkillCard
 					logos={["fab fa-react"]}
-					title="React-JS"
+					title="React JS"
 					description="Built projects using React. Extensively use functions with React Hooks in React rather than classes. Even this website is built using React."
 				/>
 				<SkillCard
@@ -37,7 +37,7 @@ export default function Skills() {
 				<SkillCard
 					logos={["fas fa-sitemap"]}
 					title="Machine Learning"
-					description="I have implemented machine learning techniques extensively in Python. Have done mini-courses in data manipulation and visualization using Pandas and Matplotlib/Seaborn. I have basic knowledge about the algorithms and implemented various algorithms on problems through Kaggle. Known to Deep Learning but not accustomed to it."
+					description="I have implemented machine learning techniques extensively in Python. Have done mini-courses in data manipulation and visualization using Pandas and Matplotlib/Seaborn. Currently enrolled in a course on Neural Network on Coursera."
 				/>
 			</div>
 		</div>
