@@ -16,7 +16,7 @@
 }
 
 .scrolled {
-    background-color: #f1ffff;
+    background-color: #f9faff;
     color: #17252a;
     padding: 0;
     box-shadow: 0 1px 1px rgba(0,0,0,0.2);
@@ -64,11 +64,15 @@
     font-size: 1.2em;
     font-weight: 500;
     transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.navbar-links a.active {
+    color: #3a8a86 !important;
 }
 
 .navbar-links a:hover {
     color: #3a8a86;
-    /* text-decoration: underline; */
 }
 
 .navbar-links a::after {

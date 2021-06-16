@@ -40,7 +40,7 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<section className="home-container">
+			<section id="about" className="home-container">
 				<div className="info">
 					<div
 						// className={
@@ -49,7 +49,7 @@ export default function Home() {
 						className="image-container"
 					>
 						<div className="image"></div>
-						<p className="photo-credits">
+						{/* <p className="photo-credits">
 							Photo by{" "}
 							<a href="https://unsplash.com/@surface?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
 								Surface
@@ -58,7 +58,7 @@ export default function Home() {
 							<a href="https://unsplash.com/s/photos/computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
 								Unsplash
 							</a>
-						</p>
+						</p> */}
 					</div>
 					<div
 						// className={slide ? "intro" : "slide-left intro"}
@@ -79,7 +79,7 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="skill-container">
+			<section id="skills" className="skill-container">
 				<Skills />
 				<div className="skill-img-credits">
 					<p>
@@ -94,10 +94,10 @@ export default function Home() {
 					</p>
 				</div>
 			</section>
-			<section className="projects-container">
+			<section id="projects" className="projects-container">
 				<Projects />
 			</section>
-			<section className="experience-container">
+			<section id="exp" className="experience-container">
 				<Experience />
 			</section>
 		</div>

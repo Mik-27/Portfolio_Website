@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import "./navbar.css";
 
 export default function Navbar() {
@@ -56,9 +56,18 @@ export default function Navbar() {
 					}
 				>
 					<ul>
-						<Link to="/">Home</Link>
-						<Link to="/about">About</Link>
-						<Link to="/contact">Contact</Link>
+						<Link to="about" spy={true} smooth={true} activeClass="active">
+							About
+						</Link>
+						<Link to="skills" spy={true} smooth={true} activeClass="active">
+							Skills
+						</Link>
+						<Link to="projects" spy={true} smooth={true} activeClass="active">
+							Projects
+						</Link>
+						<Link to="exp" spy={true} smooth={true} activeClass="active">
+							Experience
+						</Link>
 					</ul>
 					<a
 						href="/"
