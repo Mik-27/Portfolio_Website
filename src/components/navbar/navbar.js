@@ -56,16 +56,34 @@ export default function Navbar() {
 					}
 				>
 					<ul>
-						<Link to="about" spy={true} smooth={true} activeClass="active">
+						<Link
+							to="about"
+							spy={true}
+							smooth={true}
+							activeClass="active"
+							offset={-100}
+						>
 							About
 						</Link>
-						<Link to="skills" spy={true} smooth={true} activeClass="active">
+						<Link
+							to="skills"
+							spy={true}
+							smooth={true}
+							activeClass="active"
+							offset={-50}
+						>
 							Skills
 						</Link>
 						<Link to="projects" spy={true} smooth={true} activeClass="active">
 							Projects
 						</Link>
-						<Link to="exp" spy={true} smooth={true} activeClass="active">
+						<Link
+							to="exp"
+							spy={true}
+							smooth={true}
+							activeClass="active"
+							offset={-100}
+						>
 							Experience
 						</Link>
 					</ul>
