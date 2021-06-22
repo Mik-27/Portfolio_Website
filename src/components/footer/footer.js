@@ -4,9 +4,6 @@ export default function Footer() {
 	return (
 		<footer>
 			<div className="footer-container">
-				<div className="footer-header">
-					<h2>Mihir Thakur</h2>
-				</div>
 				<div className="footer-links">
 					<a
 						className="github-link"
@@ -32,6 +29,18 @@ export default function Footer() {
 					>
 						<i className="fab fa-kaggle"></i>
 					</a>
+				</div>
+				<p className="footer-email">
+					<b>Contact me:&nbsp;</b>
+					<a href="mailto: tmihir27@gmail.com">tmihir27@gmail.com</a>
+				</p>
+
+				<div className="footer-header">
+					<br />
+					<h2>Mihir Thakur</h2>
+				</div>
+				<div className="footer-copyright">
+					<p>Copyright © 2021 Mihir Thakur</p>
 				</div>
 			</div>
 		</footer>
