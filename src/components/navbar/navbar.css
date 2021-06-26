@@ -57,8 +57,10 @@
 }
 
 .navbar-links a {
+    text-align: center;
     text-decoration: none;
     color: inherit;
+    /* width: 15%; */
     padding: 10px;
     margin: 0 10px;
     font-size: 1.2em;
@@ -69,7 +71,7 @@
 
 .navbar-links a.active {
     color: #3a8a86 !important;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     font-weight: 700;
     /* border-bottom: 2px solid #3a8a86; */
 }

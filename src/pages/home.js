@@ -1,4 +1,4 @@
-// import { useState, useEffect } from "react";
+// import { useState, useLayoutEffect, useRef } from "react";
 import Skills from "../container/skillsContainer/skills";
 import Projects from "../container/projectsContainer/projects";
 import Experience from "../container/experienceContainer/exp";
@@ -7,6 +7,27 @@ import bgImg from "../assets/laptopbg.jpg";
 
 export default function Home() {
 	// const [slide, setSlide] = useState(false);
+
+	// const slideRef = useRef(null);
+
+	// useLayoutEffect(() => {
+	// 	const topPos = (element) => element.getBoundingRect().top;
+	// 	const divPos = topPos(slideRef.current);
+	// 	console.log(divPos);
+	// 	// console.log();
+
+	// 	const onScroll = () => {
+	// 		const scrollPos = window.scrollY + window.innerHeight;
+	// 		if (divPos < scrollPos) {
+	// 			console.log(divPos, scrollPos);
+	// 			setSlide(() => false);
+	// 		}
+	// 	};
+
+	// 	window.addEventListener("scroll", onScroll, { passive: true });
+	// 	return () =>
+	// 		window.removeEventListener("scroll", onScroll, { passive: true });
+	// }, []);
 
 	// const slideIn = () => {
 	// 	if (window.scrollY >= 450) {
@@ -47,6 +68,8 @@ export default function Home() {
 						// 	slide ? "image-container" : "image-container slide-right"
 						// }
 						className="image-container"
+						// animate={slide}
+						// ref={slideRef}
 					>
 						<div className="image"></div>
 						{/* <p className="photo-credits">

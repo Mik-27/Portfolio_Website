@@ -104,6 +104,7 @@
     opacity: 1;
     position: relative;
     right: 0;
+    /* transform: translateX(${({ animate }) => (animate ? "0" : "-100vw")}); */
     transition: 0.7s ease-out;
 }
 
@@ -206,9 +207,29 @@
 
 .skill-container {
     background-color: #17252a;
-    background-image: url("../assets/skillsbg.jpg");
+    position: relative;
+    /* background: url("../assets/skillsbg.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: scale; */
+    transform:translatez(0);
+    -webkit-transform:translatez(0);
+}
+    
+.skill-container::before {
+    background-image: url('../assets/skillsbg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
     background-size: cover;
     background-attachment: fixed;
+    content: '';
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed; 
+    width: 100%;
+    will-change: transform;
+    z-index: -1;
+    
 }
 
 .skill-img-credits {
