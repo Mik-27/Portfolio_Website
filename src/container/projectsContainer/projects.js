@@ -21,7 +21,11 @@ export default function Projects() {
 					title="YelpCamp"
 					link="https://github.com/Mik-27/Yelp_Camp"
 				/>
-				<ProjectCard image={pdpImg} title="Plant Disease Prediction" link="" />
+				<ProjectCard
+					image={pdpImg}
+					title="Plant Disease Prediction"
+					link="https://github.com/Mik-27/Plant-Disease-Detection-CNN"
+				/>
 				{/* <ProjectCard /> */}
 			</div>
 		</div>
